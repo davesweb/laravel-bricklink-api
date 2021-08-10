@@ -44,4 +44,28 @@ class CategoryController extends Controller
 }
 ```
 
+Example 2: Inject repository in your controller and use value objects and transformers:
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Requests\StoreCategoryRequest;
+use Illuminate\Contracts\Support\Renderable;
+use Davesweb\BricklinkApi\Repositories\CouponRepository;
+use Davesweb\BrinklinkApi\Transformers\CouponTransformer;
+
+class CouponController extends Controller
+{
+    public function store(StoreCategoryRequest $request, CouponRepository $repository): Renderable
+    {
+        $coupon = CouponTransformer::toObject($request->validated());
+        
+        $newCoupon = $repository->store($coupon);
+        
+        return redirect()->back()->with('success', 'Succesfully created the new coupon.');
+    }
+}
+```
+
 For documentation on how to use the repositories and value objects please refer to the [davesweb/bricklink-api](https://github.com/davesweb/bricklink-api) package.
