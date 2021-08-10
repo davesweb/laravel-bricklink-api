@@ -19,4 +19,29 @@ BIRCKLINK_TOKEN_SECRET=
 
 You can find the values for these in your Bricklink account.
 
-For documentation on how to use the API after installation please refer to the [davesweb/bricklink-api](https://github.com/davesweb/bricklink-api) package.
+## Usage
+This package takes care of the configuration of the API connection so you can inject or resolve the repository classes directly in your Laravel application.
+
+Example 1: Inject category repository in your controller:
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Contracts\Support\Renderable;
+use Davesweb\BricklinkApi\Repositories\CategoryRepository;
+
+class CategoryController extends Controller
+{
+    public function index(CategoryRepository $repository): Renderable
+    {
+        $categories = $repository->index();
+        
+        return view('categories.index', [
+            'categories' => $categories,
+        ]);
+    }
+}
+```
+
+For documentation on how to use the repositories and value objects please refer to the [davesweb/bricklink-api](https://github.com/davesweb/bricklink-api) package.
