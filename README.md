@@ -20,7 +20,7 @@ BIRCKLINK_TOKEN_SECRET=
 You can find the values for these in your Bricklink account.
 
 ## Usage
-This package takes care of the configuration of the API connection so you can inject or resolve the repository classes directly in your Laravel application.
+This package takes care of the configuration of the API connection, so you can inject or resolve the repository classes directly in your Laravel application.
 
 Example 1: Inject category repository in your controller:
 ```php
@@ -50,14 +50,14 @@ Example 2: Inject repository in your controller and use value objects and transf
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreCategoryRequest;
+use App\Http\Requests\StoreCouponRequest;
 use Illuminate\Contracts\Support\Renderable;
 use Davesweb\BricklinkApi\Repositories\CouponRepository;
 use Davesweb\BrinklinkApi\Transformers\CouponTransformer;
 
 class CouponController extends Controller
 {
-    public function store(StoreCategoryRequest $request, CouponRepository $repository): Renderable
+    public function store(StoreCouponRequest $request, CouponRepository $repository): Renderable
     {
         $coupon = CouponTransformer::toObject($request->validated());
         
@@ -68,4 +68,4 @@ class CouponController extends Controller
 }
 ```
 
-For documentation on how to use the repositories and value objects please refer to the [davesweb/bricklink-api](https://github.com/davesweb/bricklink-api) package.
+For the documentation on how to use the repositories and value objects please refer to the [davesweb/bricklink-api](https://github.com/davesweb/bricklink-api) package.
