@@ -7,7 +7,7 @@ Via composer:
 
 After installation, publish the config file with `php artisan vendor:publish --provider="Davesweb\\LaravelBicklinkApi\\ServiceProvider"`.
 
-## Documentation
+## Configuration
 This package needs 4 new environment variables:
 
 ```
