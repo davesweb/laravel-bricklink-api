@@ -4,60 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac409c51f7c35225ffaa27a95c858c60",
+    "content-hash": "bfc4ace632e71fa4a7b6db3a4191edc3",
     "packages": [
         {
             "name": "davesweb/bricklink-api",
-            "version": "dev-main",
+            "version": "1.0.0-alpha.3",
             "source": {
                 "type": "git",
-                "url": "git@github.com:davesweb/bricklink-api.git",
-                "reference": "6606494ac7e6cd278a226750c7a2a1f889c0c129"
+                "url": "https://github.com/davesweb/bricklink-api.git",
+                "reference": "b9a7974fc47a74ff2fb60836de4dc116740ad4f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davesweb/bricklink-api/zipball/6606494ac7e6cd278a226750c7a2a1f889c0c129",
-                "reference": "6606494ac7e6cd278a226750c7a2a1f889c0c129",
+                "url": "https://api.github.com/repos/davesweb/bricklink-api/zipball/b9a7974fc47a74ff2fb60836de4dc116740ad4f9",
+                "reference": "b9a7974fc47a74ff2fb60836de4dc116740ad4f9",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.3",
                 "guzzlehttp/oauth-subscriber": "^0.6.0",
+                "jawira/case-converter": "^3.4",
                 "php": "^8.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.0",
                 "phpunit/phpunit": "9.5"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Davesweb\\BrinklinkApi\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Davesweb\\BrinklinkApi\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor\\bin\\phpunit tests --colors"
-                ],
-                "cs-fixer": [
-                    "vendor\\bin\\php-cs-fixer fix --allow-risky=yes"
+                },
+                "files": [
+                    "src/helpers.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "A PHP wrapper around the Bricklink API",
             "support": {
-                "source": "https://github.com/davesweb/bricklink-api/tree/main",
-                "issues": "https://github.com/davesweb/bricklink-api/issues"
+                "issues": "https://github.com/davesweb/bricklink-api/issues",
+                "source": "https://github.com/davesweb/bricklink-api/tree/1.0.0-alpha.3"
             },
-            "time": "2021-08-10T18:13:30+00:00"
+            "time": "2021-08-12T22:33:06+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -666,6 +657,68 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2021-08-10T14:09:41+00:00"
+        },
+        {
+            "name": "jawira/case-converter",
+            "version": "v3.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jawira/case-converter.git",
+                "reference": "b32f881bfe30141a82c3b2d6ee466a2f192c7776"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jawira/case-converter/zipball/b32f881bfe30141a82c3b2d6ee466a2f192c7776",
+                "reference": "b32f881bfe30141a82c3b2d6ee466a2f192c7776",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "pds/skeleton": "PHP Package Development Standards",
+                "phing/phing": "PHP Build Tool"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jawira\\CaseConverter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jawira Portugal",
+                    "email": "dev@tugal.be",
+                    "homepage": "http://jawira.com/"
+                }
+            ],
+            "description": "Convert strings between 13 naming conventions: Snake case, Camel case, Pascal case, Kebab case, Ada case, Train case, Cobol case, Macro case, Upper case, Lower case, Sentence case, Title case and Dot notation.",
+            "homepage": "https://jawira.github.io/case-converter/",
+            "keywords": [
+                "Ada case",
+                "Cobol case",
+                "Macro case",
+                "Train case",
+                "camel case",
+                "dot notation",
+                "kebab case",
+                "lower case",
+                "pascal case",
+                "sentence case",
+                "snake case",
+                "title case",
+                "upper case"
+            ],
+            "support": {
+                "issues": "https://github.com/jawira/case-converter/issues",
+                "source": "https://github.com/jawira/case-converter/tree/v3.4.2"
+            },
+            "time": "2021-01-05T08:56:22+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -1546,7 +1599,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "davesweb/bricklink-api": 20
+        "davesweb/bricklink-api": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

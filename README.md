@@ -1,5 +1,5 @@
 # Laravel Bricklink API
-This pacakge is a Laravel wrapper for the `davesweb/bricklink-api` package. It adds a config file for your Bricklink credentials, a service provider which registers everything correctly for dependency injection, and an autodiscover to the `davesweb/bricklink-api` package. Other functionality stays the same. 
+This package is a Laravel wrapper for the `davesweb/bricklink-api` package. It adds a config file for your Bricklink credentials, a service provider which registers everything correctly for dependency injection, and an autodiscover to the `davesweb/bricklink-api` package. Other functionality stays the same. 
 
 ## Installation
 Via composer:
@@ -44,7 +44,7 @@ class CategoryController extends Controller
 }
 ```
 
-Example 2: Inject repository in your controller and use value objects and transformers:
+Example 2: Inject a repository in your controller and use value objects and transformers:
 ```php
 <?php
 
@@ -57,13 +57,13 @@ use Davesweb\BrinklinkApi\Transformers\CouponTransformer;
 
 class CouponController extends Controller
 {
-    public function store(StoreCouponRequest $request, CouponRepository $repository): Renderable
+    public function store(StoreCouponRequest $request, CouponRepository $repository, CouponTransformer $transformer): Renderable
     {
-        $coupon = CouponTransformer::toObject($request->validated());
+        $coupon = $transformer->toObject($request->validated());
         
         $newCoupon = $repository->store($coupon);
         
-        return redirect()->back()->with('success', 'Succesfully created the new coupon.');
+        return redirect()->back()->with('success', 'Succesfully created the new coupon ' . $newCoupon->couponId . '.');
     }
 }
 ```
