@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "davesweb/bricklink-api",
-            "version": "1.0.0-alpha.3",
+            "version": "1.0.0-rc.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/davesweb/bricklink-api.git",
-                "reference": "b9a7974fc47a74ff2fb60836de4dc116740ad4f9"
+                "reference": "1d00a819f797c1ed24c93c7f3204e61ad7f9b83d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davesweb/bricklink-api/zipball/b9a7974fc47a74ff2fb60836de4dc116740ad4f9",
-                "reference": "b9a7974fc47a74ff2fb60836de4dc116740ad4f9",
+                "url": "https://api.github.com/repos/davesweb/bricklink-api/zipball/1d00a819f797c1ed24c93c7f3204e61ad7f9b83d",
+                "reference": "1d00a819f797c1ed24c93c7f3204e61ad7f9b83d",
                 "shasum": ""
             },
             "require": {
@@ -46,9 +46,9 @@
             "description": "A PHP wrapper around the Bricklink API",
             "support": {
                 "issues": "https://github.com/davesweb/bricklink-api/issues",
-                "source": "https://github.com/davesweb/bricklink-api/tree/1.0.0-alpha.3"
+                "source": "https://github.com/davesweb/bricklink-api/tree/1.0.0-rc.1"
             },
-            "time": "2021-08-12T22:33:06+00:00"
+            "time": "2021-08-18T19:02:01+00:00"
         },
         {
             "name": "doctrine/inflector",
