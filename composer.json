@@ -1,7 +1,6 @@
 {
     "name": "davesweb/laravel-bricklink-api",
     "description": "Laravel wrapper for the davesweb/bricklink-api package.",
-    "version": "0.0.1",
     "type": "library",
     "require": {
         "php": "^8.0",
