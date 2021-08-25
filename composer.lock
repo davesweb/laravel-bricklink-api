@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bfc4ace632e71fa4a7b6db3a4191edc3",
+    "content-hash": "737c0a65252d078744f4b714cce6a429",
     "packages": [
         {
             "name": "davesweb/bricklink-api",
-            "version": "1.0.0-rc.1",
+            "version": "1.0.0-rc.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/davesweb/bricklink-api.git",
-                "reference": "1d00a819f797c1ed24c93c7f3204e61ad7f9b83d"
+                "reference": "26d25dcb2fd6728847e21b219aeb785a648b724e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davesweb/bricklink-api/zipball/1d00a819f797c1ed24c93c7f3204e61ad7f9b83d",
-                "reference": "1d00a819f797c1ed24c93c7f3204e61ad7f9b83d",
+                "url": "https://api.github.com/repos/davesweb/bricklink-api/zipball/26d25dcb2fd6728847e21b219aeb785a648b724e",
+                "reference": "26d25dcb2fd6728847e21b219aeb785a648b724e",
                 "shasum": ""
             },
             "require": {
@@ -46,9 +46,9 @@
             "description": "A PHP wrapper around the Bricklink API",
             "support": {
                 "issues": "https://github.com/davesweb/bricklink-api/issues",
-                "source": "https://github.com/davesweb/bricklink-api/tree/1.0.0-rc.1"
+                "source": "https://github.com/davesweb/bricklink-api/tree/1.0.0-rc.2"
             },
-            "time": "2021-08-18T19:02:01+00:00"
+            "time": "2021-08-25T02:43:23+00:00"
         },
         {
             "name": "doctrine/inflector",
