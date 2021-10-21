@@ -5,7 +5,7 @@
     "require": {
         "php": "^8.0",
         "illuminate/support": "^8.0",
-        "davesweb/bricklink-api": "^1.0@alpha"
+        "davesweb/bricklink-api": "^1.0.0"
     },
     "autoload": {
         "psr-4": {
