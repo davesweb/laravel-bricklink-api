@@ -5,7 +5,7 @@ This package is a Laravel wrapper for the `davesweb/bricklink-api` package. It a
 Via composer:
 `composer require davesweb/laravel-bricklink-api`
 
-After installation, publish the config file with `php artisan vendor:publish --provider="Davesweb\\LaravelBicklinkApi\\ServiceProvider"`.
+After installation, publish the config file with `php artisan vendor:publish --tag=bricklink-config`.
 
 ## Configuration
 This package needs 4 new environment variables:

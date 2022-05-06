@@ -14,7 +14,7 @@ class ServiceProvider extends IlluminateServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/bricklink.php' => config_path('bricklink.php'),
-        ]);
+        ], 'bricklink-config');
     }
     
     public function register()
